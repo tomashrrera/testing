@@ -16,6 +16,9 @@ def test_porcentaje_negativo ():
 def test_porcentaje_mayor_a_100 ():
     assert calcular_descuento(100, 150) == "Error: porcentaje inválido"
 
+def test_precio_negativo ():
+    assert calcular_descuento(-50,10) == "Error: precio inválido"
+
 # FASE 4: Otros
 def test_precio_cero ():
     assert calcular_descuento(0, 50) == 0.0
